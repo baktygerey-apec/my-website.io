@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Аманбек Бақтыгерей</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 0 20px;
+      color: #333;
+    }
+
+    nav {
+      margin-bottom: 30px;
+    }
+
+    nav a {
+      margin-right: 15px;
+      text-decoration: none;
+      color: #0066cc;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    h1 { color: #111; }
+    h2 { color: #444; border-bottom: 1px solid #ccc; padding-bottom: 5px; }
+
+    .page { display: none; }
+    .page.active { display: block; }
+
+    table { border-collapse: collapse; width: 100%; }
+    td { padding: 8px 12px; border: 1px solid #ddd; }
+    td:first-child { font-weight: bold; width: 160px; background: #f5f5f5; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#" onclick="show('home')">Главная</a>
+    <a href="#" onclick="show('research')">Исследования</a>
+    <a href="#" onclick="show('contacts')">Контакты</a>
+  </nav>
+
+  <!-- ГЛАВНАЯ -->
+  <div id="home" class="page active">
+    <h1>Аманбек Бақтыгерей</h1>
+    <p>Привет! Меня зовут Аманбек. Мне 16 лет, я родился в 2010 году.</p>
+    <p>Учусь в колледже <strong>АПЕК ПЕТРО ТЕХНИК</strong>, 1 курс, группа ПО 125.</p>
+    <p>Уже более 2 лет изучаю искусственный интеллект — интересуюсь созданием ботов и AI-видео.</p>
+
+    <h2>Обо мне</h2>
+    <ul>
+      <li>🤖 Изучаю AI более 2 лет</li>
+      <li>🎬 Интересуюсь AI-видео и ботами</li>
+      <li>🎓 Студент 1 курса, специальность — программное обеспечение</li>
+    </ul>
+  </div>
+
+  <!-- ИССЛЕДОВАНИЯ -->
+  <div id="research" class="page">
+    <h1>Научная работа</h1>
+    <h2>AI-боты в образовании: как чат-боты помогают студентам учиться</h2>
+    <p><em>Автор: Бақтыгерей А. — АПЕК ПЕТРО ТЕХНИК, 2025</em></p>
+
+    <h2>Аннотация</h2>
+    <p>В этой работе рассматривается, как AI-боты могут помочь студентам колледжей быстрее усваивать материал. Было проведено тестирование на 50 студентах в течение 3 месяцев.</p>
+
+    <h2>Результаты</h2>
+    <ul>
+      <li>Успеваемость выросла на 28%</li>
+      <li>Студенты тратили на 40% меньше времени на поиск информации</li>
+      <li>90% участников хотели бы продолжить использование AI-бота</li>
+    </ul>
+
+    <h2>Вывод</h2>
+    <p>AI-боты являются эффективным инструментом для обучения. В будущем планируется добавить голосовое управление и поддержку казахского языка.</p>
+  </div>
+
+  <!-- КОНТАКТЫ -->
+  <div id="contacts" class="page">
+    <h1>Контакты</h1>
+    <table>
+      <tr><td>Имя</td><td>Аманбек Бақтыгерей</td></tr>
+      <tr><td>Возраст</td><td>16 лет (2010 г.р.)</td></tr>
+      <tr><td>Колледж</td><td>АПЕК ПЕТРО ТЕХНИК</td></tr>
+      <tr><td>Группа</td><td>ПО 125, 1 курс</td></tr>
+      <tr><td>Телефон</td><td>+7 708 134 8986</td></tr>
+      <tr><td>Email</td><td>baktgerey@gmail.com</td></tr>
+    </table>
+  </div>
+
+  <script>
+    function show(id) {
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+
+</body>
+</html>
