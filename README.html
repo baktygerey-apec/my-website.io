@@ -1,0 +1,118 @@
+!DOCTYPE html
+
+html lang=ru
+head
+  meta charset=UTF-8
+  meta name=viewport content=width=device-width, initial-scale=1.0
+  titleАманбек Бақтыгерейtitle
+  style
+    body {
+      font-family Arial, sans-serif;
+      max-width 700px;
+      margin 40px auto;
+      padding 0 20px;
+      color #333;
+    }
+
+```
+nav {
+  margin-bottom 30px;
+}
+
+nav a {
+  margin-right 15px;
+  text-decoration none;
+  color #0066cc;
+}
+
+nav ahover {
+  text-decoration underline;
+}
+
+h1 { color #111; }
+h2 { color #444; border-bottom 1px solid #ccc; padding-bottom 5px; }
+
+.page { display none; }
+.page.active { display block; }
+
+table { border-collapse collapse; width 100%; }
+td { padding 8px 12px; border 1px solid #ddd; }
+tdfirst-child { font-weight bold; width 160px; background #f5f5f5; }
+```
+
+  style
+head
+body
+
+  nav
+    a href=# onclick=show('home')Главнаяa
+    a href=# onclick=show('research')Исследованияa
+    a href=# onclick=show('contacts')Контактыa
+  nav
+
+  !-- ГЛАВНАЯ --
+
+  div id=home class=page active
+    h1Аманбек Бақтыгерейh1
+    pПривет! Меня зовут Аманбек. Мне 16 лет, я родился в 2010 году.p
+    pУчусь в колледже strongАПЕК ПЕТРО ТЕХНИКstrong, 1 курс, группа ПО 125.p
+    pУже более 2 лет изучаю искусственный интеллект — интересуюсь созданием ботов и AI-видео.p
+
+```
+h2Обо мнеh2
+ul
+  li🤖 Изучаю AI более 2 летli
+  li🎬 Интересуюсь AI-видео и ботамиli
+  li🎓 Студент 1 курса, специальность — программное обеспечениеli
+ul
+```
+
+  div
+
+  !-- ИССЛЕДОВАНИЯ --
+
+  div id=research class=page
+    h1Научная работаh1
+    h2AI-боты в образовании как чат-боты помогают студентам учитьсяh2
+    pemАвтор Бақтыгерей А. — АПЕК ПЕТРО ТЕХНИК, 2025emp
+
+```
+h2Аннотацияh2
+pВ этой работе рассматривается, как AI-боты могут помочь студентам колледжей быстрее усваивать материал. Было проведено тестирование на 50 студентах в течение 3 месяцев.p
+
+h2Результатыh2
+ul
+  liУспеваемость выросла на 28%li
+  liСтуденты тратили на 40% меньше времени на поиск информацииli
+  li90% участников хотели бы продолжить использование AI-ботаli
+ul
+
+h2Выводh2
+pAI-боты являются эффективным инструментом для обучения. В будущем планируется добавить голосовое управление и поддержку казахского языка.p
+```
+
+  div
+
+  !-- КОНТАКТЫ --
+
+  div id=contacts class=page
+    h1Контактыh1
+    table
+      trtdИмяtdtdАманбек Бақтыгерейtdtr
+      trtdВозрастtdtd16 лет (2010 г.р.)tdtr
+      trtdКолледжtdtdАПЕК ПЕТРО ТЕХНИКtdtr
+      trtdГруппаtdtdПО 125, 1 курсtdtr
+      trtdТелефонtdtd+7 708 134 8986tdtr
+      trtdEmailtdtdbaktgerey@gmail.comtdtr
+    table
+  div
+
+  script
+    function show(id) {
+      document.querySelectorAll('.page').forEach(p = p.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  script
+
+body
+html
